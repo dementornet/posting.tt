@@ -1,0 +1,165 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Soft off-white background */
+    color: #2f2f2f; /* Dark gray text for readability */
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #333; /* Dark gray for better contrast */
+    font-weight: 600; /* Slightly bold headings */
+}
+
+a {
+    color: #4a90e2; /* Subtle blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2e77b1; /* Darker blue on hover */
+}
+
+p {
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff; /* White header for clean look */
+    color: #2f2f2f;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+}
+
+header h1 {
+    font-size: 2.4rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Container for the content */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Hover effect for depth */
+}
+
+/* Links container */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+nav a {
+    padding: 10px 20px;
+    margin: 0 15px;
+    border-radius: 5px;
+    background-color: #f1f1f1; /* Subtle background for nav links */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: #e0e0e0; /* Light gray background on hover */
+    color: #333; /* Dark text on hover */
+}
+
+/* Button styles */
+button {
+    padding: 14px 22px;
+    font-size: 16px;
+    background-color: #4a90e2; /* Soft blue for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #357ab7; /* Slightly darker blue */
+}
+
+/* Page specific styles */
+h2 {
+    margin-top: 30px;
+    font-size: 1.8rem;
+    color: #333;
+    border-bottom: 2px solid #eeeeee; /* Light border */
+    padding-bottom: 12px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px;
+    background-color: #ffffff;
+    color: #4a90e2; /* Subtle blue color for footer text */
+    font-size: 14px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for footer */
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #4a90e2; /* Soft blue border on focus */
+    outline: none;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+}
